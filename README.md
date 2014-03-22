@@ -1,0 +1,1 @@
+This is a personal skeleton used for internal projects.

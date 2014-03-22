@@ -1,0 +1,12 @@
+# Generic File Extensions
+*.zip
+*.db
+
+# Specific Folder
+.sass-cache
+node_modules
+assets/css
+assets/js
+
+# Specific Files
+.htaccess
