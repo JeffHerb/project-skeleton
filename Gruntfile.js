@@ -7,16 +7,25 @@ module.exports = function(grunt) {
     // Read the project package json
     pkg: grunt.file.readJSON('package.json'),
 
+    // Clean the 
+    clean: {
+      build: {
+        src: ['assets/css', 'assets/js']
+      }
+    },
+
     // Coffe Compiler
     coffee: {
-      files: [{
-        expand: true,
-        flatten: true,
-        cwd: 'assets/coffee',
-        src: ['**/*.coffee'],
-        dest: 'assets/js',
-        ext: '.js'
-      }]
+      dist: {
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'assets/coffee',
+          src: ['**/*.coffee'],
+          dest: 'assets/js',
+          ext: '.js'
+        }]
+      }
     },
 
     // Sass Compiler
